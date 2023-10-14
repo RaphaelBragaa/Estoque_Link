@@ -1,48 +1,65 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #1e847f;
+    font-family: "Roboto", Arial;
+    background-color: #f5e3ae;
+    color:#b1ccc4;
 }
 
 .img{
-    width: 300px;
-    text-align: center;
-    padding: 20px;
+    object-fit: contain;
+    width: 80%;
+    height: 40dvh;
 }
 
-.container{
-    text-align: center;
-
+.container_login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
-.email{
-    padding: 7px 17px;
-    border-radius: 5px;
-}
-
-form{
-    padding: 50px;
-    
-}
-
-.senha{
-    padding: 7px 17px;
-    border-radius: 5px;
-}
-
-.container input{
-   border: none;
-}
-
-.cadastrar{
-    position: absolute;
-    right: 2px;
-    background-color: #ecc19c ;
+.box_input{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    height: 5vh;
+    background-color: #fff5d6;
     border: none;
-    border-radius: 5px;
-    padding: 7px 15px;
+    margin-bottom:5px ;
+
+}
+input{
+   border: none;
+   background-color:#fff5d6;
+   color:#b1ccc4;
 }
 
-.container .input label{
-    position: absolute;
-    left: 25%;
+input::placeholder{
+    color:#b1ccc4;
+    font-weight: 600;
+}
+form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+}
+
+h2{
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+.box_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 2.5rem;
+    font-weight: 600;
+    background-color: #4e5861;
+    border-radius: 5px;
+    color: #FFFFFF;
+    margin-top: 10px;
 }
